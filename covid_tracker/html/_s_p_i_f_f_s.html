@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IOT_B2: SPIFFS</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">IOT_B2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_s_p_i_f_f_s.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">SPIFFS</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Table des matières</h3>
+<ul><li class="level1"><a href="#spiffs_intro">Introduction</a></li>
+<li class="level1"><a href="#spiffs_functions">Fonctions</a></li>
+<li class="level1"><a href="#spiffs_variables">Variables Globales</a></li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="spiffs_intro"></a>
+Introduction</h1>
+<p>Ce fichier contient les déclarations et les définitions des fonctions pour la gestion du système de fichiers SPIFFS.</p>
+<h1><a class="anchor" id="spiffs_functions"></a>
+Fonctions</h1>
+<p>Ce fichier définit les fonctions suivantes :</p><ul>
+<li>setupSPIFFS : Montage du système de fichiers SPIFFS et récupération des données de configuration et d'historique</li>
+<li>PrintSPIFFSFiles : Affichage dans le terminal série de la liste des fichiers du SPIFFS</li>
+<li>PrintFileContent : Affichage dans le terminal série du contenu d'un fichier</li>
+<li>getConfig : Récupération et enregistrement des données de configuration depuis le fichier config.json</li>
+<li>getHistory : Récupération et retour des données d'historique depuis le fichier history.json</li>
+<li>updateHistory : Mise à jour des données d'historique avec le temps passé en contact avec un autre appareil</li>
+<li>update_contact_health : Mise à jour de l'état de santé d'un contact dans l'historique</li>
+<li>updateNetwork : Mise à jour de la configuration réseau dans le fichier de configuration</li>
+<li>updateDeviceConfig : Mise à jour d'une valeur de configuration de l'appareil dans le fichier de configuration</li>
+<li>read_json_file : Lecture et désérialisation d'un fichier JSON</li>
+<li>write_json_file : Sérialisation et écriture d'un document JSON dans un fichier</li>
+<li>add_to_history : Ajout du temps passé en contact avec un autre appareil dans l'historique</li>
+</ul>
+<h1><a class="anchor" id="spiffs_variables"></a>
+Variables Globales</h1>
+<p>Ce fichier définit les variables globales suivantes :</p><ul>
+<li>strConfigFile : Chemin du fichier de configuration (config.json)</li>
+<li>strHistoryFile : Chemin du fichier d'historique (history.json)</li>
+<li>configFile : Instance du fichier de configuration</li>
+<li>historyFile : Instance du fichier d'historique</li>
+<li>isSPIFFSSetup : Indicateur du statut du système de fichiers SPIFFS (monté ou non) </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

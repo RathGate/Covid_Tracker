@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IOT_B2: Projet et évaluation</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">IOT_B2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('projet.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Projet et évaluation</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Vous avez à créer un projet de votre choix qui propose un service à l'aide des différentes fonctionnalités.<br  />
+ Chaque fonctionalité est valorisée indépendamment les unes des autres, à vous de composer en sachant que le WiFi et MQTT sont obligatoires.</p><ul>
+<li>WiFi - 3 points</li>
+<li>MQTT / Adafruit - 5 points</li>
+<li>Serveur Web - 3 points</li>
+<li>Système de fichier + JSON - 3 points</li>
+<li>Capteurs/LED - 3 points</li>
+<li>Network Tranport Protocol - 2 points</li>
+<li>Ticker et/ou Time - 2 points</li>
+<li>Deep Sleep - 2 points</li>
+<li>Bluetooth - 3 points</li>
+<li>Interaction type IFTTT - 3 points</li>
+<li>Over The Air - 4 points</li>
+<li>Remote Debug - 4 points</li>
+</ul>
+<h1><a class="anchor" id="exemple"></a>
+Exemple du "YNOV Contact Tracer"</h1>
+<p>Voici la liste des fonctionnalités proposées :</p><ul>
+<li>En tant qu'utilisateur<ul>
+<li>Je peux me connecter en WiFi à l'objet et un portail web captif me permet de le configurer<ul>
+<li>WiFi : SSID et mot de passe</li>
+<li>Paramètres : plusieurs paramètres me sont proposés pour ajuster son fonctionnement</li>
+</ul>
+</li>
+<li>Autres Contacts Tracers<ul>
+<li>Mon objet détecte les Contacts Tracers à proximité (paramétrable en mètre)</li>
+<li>Mon objet stocke en mémoire la liste de tous Contacts Tracers que j'ai rencontrés, même moins de 5 min</li>
+<li>Si mon objet reste à proximité d'un Contact Tracer au moins 5 min (paramétrable en minutes), alors il est identié comme une contact à suivre</li>
+<li>Je peux consulter l'historique des mes rencontres et contacts à suivre (nombre, date, durée, état de santé ...)</li>
+<li>Je suis informé du changement de l'état de santé de mes contacts à suivre</li>
+</ul>
+</li>
+<li>Mon état de santé<ul>
+<li>Mon état de santé, quel qu'il soit, est diffusé afin que ceux qui me "suivent" soient informés</li>
+<li>Je peux renseigner mon état de santé (sain, cas contact, malade)</li>
+<li>Si un de mes contacts à suivre est malade alors mon état de santé passe à "cas contact", si je ne suis pas déjà malade et diffuse l'information à mes contacts à suivre</li>
+<li>Je suis notifié (notification téléphone / email / LED ou autre moyen) que mon état de santé est passé à "Cas contact"</li>
+</ul>
+</li>
+<li>Capteur<ul>
+<li>Mon objet capte et remonte régulièrement (paramétrable) une information d'un capteur (exemple capteur de température)</li>
+<li>Un seuil (paramétrable) est défini, qui une fois franchi me fait passer à l'état malade (exemple température &gt; 39°C)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>En tant qu'administrateur<ul>
+<li>Je peux mettre à jour le firmware des objets à distance</li>
+<li>Je peux activer et lire les traces sur les objets à distance</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="evaluation"></a>
+Evaluation</h1>
+<p>L'évaluation du module est réalisée sur la base de 3 notes :</p><ul>
+<li>Soutenance - <b>20 POINTS</b><ul>
+<li>Description fonctionnelle (à quoi cela sert) - 5 points</li>
+<li>Description technique et architecture (comment la solution fonctionne) - 5 points</li>
+<li>Liste des fonctionnalités (les composants techniques développés) - 5 points</li>
+<li>Diagramme de séquence du cas d'usage de la démonstration - 5 points</li>
+</ul>
+</li>
+<li>Démonstration - <b>20 POINTS</b></li>
+<li>Documentation - <b>20 POINTS</b><br  />
+<ul>
+<li>Un fichier zip est déposé sur Moodle incluant tous les fichiers de code commentés et la documentation associée - <b>3 POINTS</b></li>
+<li>La documentation HTML générée par Doxygen est présente et accessible via le fichier index.html - <b>3 POINTS</b></li>
+<li>La documentation est suffisamment précise pour comprendre le code - <b>14 POINTS</b><ul>
+<li>Le projet est expliqué fonctionnellement - 3 points</li>
+<li>L'architecture du projet est présentée sous la forme d'une image avec du texte - 3 points</li>
+<li>Un cas d'usage IoT incluant l'interaction de 2 objets via MQTT est présenté avec une image et du texte - 3 points</li>
+<li>La liste des fonctionnalités développées et démontrées est précisée - 2 points</li>
+<li>Les fonctionnalités développées et démontrées sont documentées - 3 points</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="groupe"></a>
+Groupes de travail</h1>
+<p>Pour mener à bien ce projet :</p><ul>
+<li>Vous travaillez seuls ou en groupe avec le nombre de membres que vous souhaitez</li>
+<li>Tous les membres d'un groupe auront la même note quelque soit la répartition du travail au sein du groupe</li>
+</ul>
+<h1><a class="anchor" id="evalutation"></a>
+Evaluation</h1>
+<ul>
+<li>Soutenance : 20 coefficient 1</li>
+<li>Démonstration : 20 coefficient 1</li>
+<li>Documentation : 20 coefficient 1 </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

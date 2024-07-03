@@ -1,0 +1,18 @@
+{
+    "network": {
+        "wan": {
+            "ssid": "",
+            "pswd": ""
+        },
+        "lan": {
+            "ssid": "",
+            "pswd": ""
+        }
+    },
+    "device": {
+        "tracker_distance": "2",
+        "tracker_time": "30"
+    },
+    "health": "SAIN"
+}
+

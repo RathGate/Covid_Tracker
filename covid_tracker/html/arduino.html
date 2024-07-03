@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IOT_B2: Fichier principal covid_tracker.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">IOT_B2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('arduino.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Fichier principal covid_tracker.ino</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Table des matières</h3>
+<ul><li class="level1"><a href="#intro">Introduction</a></li>
+<li class="level1"><a href="#modules">Modules</a></li>
+<li class="level1"><a href="#setup">Configuration (SETUP)</a></li>
+<li class="level1"><a href="#loop">Boucle Principale (LOOP)</a></li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+Introduction</h1>
+<p>Ce fichier contient le code principal du projet. Il initialise les différents modules et définit les fonctions de configuration (setup) et de boucle (loop).</p>
+<h1><a class="anchor" id="modules"></a>
+Modules</h1>
+<p>Ce fichier inclut les modules suivants :</p><ul>
+<li><a class="el" href="_my_creds_8h.html">MyCreds.h</a> : Gestion des variables globales, notamment identifiants et mots de passe</li>
+<li><a class="el" href="_my_debug_8h.html">MyDebug.h</a> : Débogage</li>
+<li><a class="el" href="_my_wi_fi_8h.html">MyWiFi.h</a> : Configuration et gestion du WiFi</li>
+<li><a class="el" href="_my_s_p_i_f_f_s_8h.html">MySPIFFS.h</a> : Système de fichiers Flash</li>
+<li><a class="el" href="_my_adafruit_i_o_8h.html">MyAdafruitIO.h</a> : Gestion de la communication MQTT avec Adafruit IO</li>
+<li><a class="el" href="_my_web_server_8h.html">MyWebServer.h</a> : Serveur Web</li>
+<li><a class="el" href="_my_b_l_e_8h.html">MyBLE.h</a> : Communication Bluetooth Low Energy (BLE)</li>
+<li><a class="el" href="_my_o_t_a_8h.html">MyOTA.h</a> : Mise à jour du firmware Over The Air (OTA)</li>
+<li><a class="el" href="_my_core0_8h.html">MyCore0.h</a> : Utilisation du Core 0 (pour les processeurs multi-coeurs)</li>
+<li><a class="el" href="_my_ticker_8h.html">MyTicker.h</a> : Gestion des tâches périodiques (tickers)</li>
+</ul>
+<h1><a class="anchor" id="setup"></a>
+Configuration (SETUP)</h1>
+<p>La fonction setup() initialise tous les modules nécessaires au fonctionnement du projet. Voici les étapes effectuées dans cette fonction :</p>
+<ul>
+<li>Initialisation du débogage</li>
+<li>Initialisation du système de fichiers SPIFFS</li>
+<li>Initialisation du WiFi + synchronisation NTP</li>
+<li>Initialisation du serveur Web</li>
+<li>Initialisation du Core 0 pour faire tourner le serveur Web</li>
+<li>Initialisation de la communication MQTT avec Adafruit IO et du ticker envoyant l'état de santé à intervalle régulier</li>
+<li>Initialisation du serveur puis du client BLE</li>
+<li>Initialisation du mode Over The Air (OTA)</li>
+<li>Impression des identifiants et mots de passe (pour le débogage)</li>
+</ul>
+<h1><a class="anchor" id="loop"></a>
+Boucle Principale (LOOP)</h1>
+<p>La fonction loop() exécute en boucle les tâches nécessaires au fonctionnement du projet sur le coeur principal (Core1) :</p>
+<ul>
+<li>Gestion de la communication MQTT avec Adafruit IO</li>
+<li>Gestion du client BLE pour scanner les identifiants à proximité</li>
+<li>Gestion du mode OTA pour les mises à jour du firmware</li>
+<li>Pause de 10 ms pour permettre au processeur de passer à d'autres tâches si nécessaire</li>
+</ul>
+<p>La fonction loop1() exécute en boucle les tâches nécessaires au fonctionnement du projet sur le coeur secondaire (Core0) :</p>
+<ul>
+<li>Gestion du serveur Web </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

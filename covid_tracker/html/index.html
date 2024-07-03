@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IOT_B2: Présentation du Projet</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">IOT_B2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Présentation du Projet </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Table des matières</h3>
+<ul><li class="level1"><a href="#introduction">Introduction</a></li>
+<li class="level1"><a href="#fonctionnalites">Fonctionnalités</a><ul><li class="level2"><a href="#utilisateur">Utilisateur</a></li>
+<li class="level2"><a href="#administrateur">Administrateur</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#architecture">Architecture</a><ul><li class="level2"><a href="#couchematerielle">Couche Matérielle &amp; Réseau</a></li>
+<li class="level2"><a href="#couchelogicielle">Couche Logicielle</a></li>
+<li class="level2"><a href="#couchecomm">Couche Communication</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#spiffs">Structure des fichiers du SPIFFS</a></li>
+<li class="level1"><a href="#cas_usage">Cas d&#39;usage IoT avec Adafruit</a></li>
+<li class="level1"><a href="#auteurs">Auteurs</a></li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="introduction"></a>
+Introduction</h1>
+<p><br  />
+ Le projet Arduino "YNOV Contact Tracer" vise à fournir une solution permettant de suivre son propre état de santé ainsi que celui des personnes rencontrées, dans un contexte de propagation de maladie type Covid-19.</p>
+<p><br  />
+ Après avoir passé un certain temps à proximité d'une autre personne munie d'un Contact Tracer, un utilisateur sera régulièrement mis au courant de l'état de santé de celui-ci s'il change, et recevra une notification si l'une des personnes suivies devient malade. Dans ce cas de figure, l'utilisateur devient automatiquement cas contact.</p>
+<p><br  />
+<br  />
+ </p>
+<h1><a class="anchor" id="fonctionnalites"></a>
+Fonctionnalités</h1>
+<h2><a class="anchor" id="utilisateur"></a>
+Utilisateur</h2>
+<ul>
+<li><b>Connexion WiFi :</b> Les utilisateurs peuvent se connecter en WiFi à l'objet et accéder à un portail web captif pour le configurer, en fournissant le SSID et le mot de passe. Cette fonctionnalité permet une configuration facile de l'appareil.</li>
+<li><b>Paramètres :</b> Via le serveur web, les utilisateurs peuvent ajuster divers paramètres pour personnaliser le fonctionnement de l'objet. Ces paramètres incluent la configuration du wifi, la distance de détection des Contacts Tracers et la fréquence de capture des données de capteur.</li>
+<li><b>Modification de l'état de santé :</b> Via le serveur web, les utilisateurs peuvent leur propre état de santé qui sera communiquer aux autres utilisateurs qui les suivent.</li>
+<li><b>Historique des Rencontres :</b> Via le serveur web, les utilisateurs peuvent consulter l'historique de leurs rencontres avec d'autres objets et les contacts à suivre. Cela inclut des informations telles que la date, la durée et l'état de santé.</li>
+<li><b>Détection des Contacts Tracers :</b> L'objet détecte les Contacts Tracers à proximité en utilisant le Bluetooth. Les informations sur les Contacts Tracers détectés sont stockées en mémoire pour permettre un suivi de leur évolution.</li>
+<li><b>Notification du changement de l'état de santé :</b> Les utilisateurs sont informés par mail si l'état de santé d'un de leur contact passe à "malade", les rendant "cas contact" par la même occasion.</li>
+</ul>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="administrateur"></a>
+Administrateur</h2>
+<ul>
+<li><b>Accès à des logs précis via port série :</b> Un administrateur peut accéder à des logs précis via le port série pour détecter d'éventuels problèmes de fonctionnement.</li>
+<li><b>Mise à jour à distance :</b> un administrateur peut mettre le programme à jour via l'over the air et la connexion réseau.</li>
+</ul>
+<p><br  />
+<br  />
+ </p>
+<h1><a class="anchor" id="architecture"></a>
+Architecture</h1>
+<p>Nous pouvons diviser l'architecture de ce projet en trois couches :</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="couchematerielle"></a>
+Couche Matérielle &amp; Réseau</h2>
+<p><img src="shema_réseau_physique.png" alt="Couche Matérielle et Réseau" width="800" class="inline"/></p>
+<p><br  />
+ L'appareil Covid Tracker :</p><ul>
+<li>est connecté en mode Station à un point d'accès internet (AP) par réseau Wi-Fi</li>
+<li>dispose de son propre sous-réseau en tant que point d'accès (mode Access Point) pour proposer la connexion à son serveur web à d'autres appareils</li>
+<li>détecte les autres Covid Tracker grâce au Bluetooth Low Energy (BLE) en mode client/serveur</li>
+</ul>
+<p><br  />
+ Note: les appareils reliés à Internet par une ligne continue noire le sont de n'importe quelle manière, dans la mesure où ils ne font pas partie de la solution.</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="couchelogicielle"></a>
+Couche Logicielle</h2>
+<p><img src="Blank_diagram_3.png" alt="Schéma du réseau" width="800" class="inline"/></p>
+<p><br  />
+ Ce diagramme présente la communication entre les différents composants logiciels de la carte, et leurs interactions avec l'extérieur :</p><ul>
+<li>Le serveur web et adafruit se servent respectivement du réseau LAN et du réseau WAN pour transmettre leurs données avec l'extérieur, les deux dépendant du Wi-Fi</li>
+<li>Ces deux éléments interagissent avec le système de fichier pour afficher ou mettre à jour les données de la carte</li>
+<li>Le module adafruit gère la connexion avec le broker, qui lui même transmet les données à IFTTT</li>
+<li>Enfin, dans l'autre sens, la détection des contacts via bluetooth va changer le contenu des fichiers, utilisé comme dit précemment par le module Adafruit et le serveur web.</li>
+</ul>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="couchecomm"></a>
+Couche Communication</h2>
+<p><img src="shema_réseau.png" alt="Schéma du réseau" width="800" class="inline"/></p>
+<p><br  />
+ Note: Par simplicité, toutes les communications de données ont été regroupées sur ce schéma, quelle que soit la couche logicielle du modèle OSI qu'elles utilisent.</p>
+<p><br  />
+ Les transferts de données sont les suivants :</p><ul>
+<li>Le serveur web est diffusé sur le protocole HTTP et accédé de cette manière par le navigateur des autres appareils</li>
+<li>La carte récupère l'heure via NTP lorsqu'elle est connectée à Internet</li>
+<li>Si l'utilisateur met son statut à jour, la donnée est envoyée au back-end du broker via MQTT, qui lui même transmet les données à IFTTT via MQTT</li>
+<li>Si IFTT réagit à la mise à jour d'une donnée, il envoie un mail à l'utilisateur via protocole mail (ici SMTP pour la simplicité)</li>
+<li>Un autre appareil peut accéder à la carte via Telnet (non affiché sur le schéma dans la mesure où le remote debug n'est pas complètement implémenté)</li>
+<li>Un autre appareil peut théoriquement modifier les données directement sur le dashboard web Adafruit s'il en a les accès (HTTP).</li>
+</ul>
+<p><br  />
+<br  />
+ </p>
+<h1><a class="anchor" id="spiffs"></a>
+Structure des fichiers du SPIFFS</h1>
+<p><br  />
+ <img src="diagram2.png" alt="Schéma du réseau" width="800" class="inline"/></p>
+<p><br  />
+<br  />
+ </p>
+<h1><a class="anchor" id="cas_usage"></a>
+Cas d'usage IoT avec Adafruit</h1>
+<p><br  />
+ <img src="diagr_sequence.png" alt="Cas d'usage" width="1000" class="inline"/></p>
+<p><br  />
+ Un cas d'usage typique implique l'interaction de deux objets :</p>
+<ul>
+<li>L'objet A détecte un Contact Tracer (objet B) à proximité via bluetooth et garde en mémoire le temps passé avec ce Contact Tracer.</li>
+<li>Si l'objet A passe un certain temps avec le Contact Tracer (objet B), ce dernier devient un contact à suivre et l'objet A se subscribe à son Feed Adafruit.</li>
+<li>A intervalles réguliers, l'objet A récupère les données de santé de l'objet B via son feed Adafruit.</li>
+<li>Si l'objet B signale un changement d'état de santé (devient malade), l'objet A est donc notifié.</li>
+<li>L'utilisateur de l'objet A devient donc un cas contact, et est informé de la situation par email.</li>
+</ul>
+<p><br  />
+<br  />
+</p>
+<h1><a class="anchor" id="auteurs"></a>
+Auteurs</h1>
+<p>Ce projet a été réalisé par une équipe de quatre étudiants de l'école Aix YNOV Campus :</p>
+<ul>
+<li><a href="https://github.com/RathGate"><b>Corbel Marianne</b></a></li>
+<li><a href="https://github.com/Tony-De-Donato"><b>De Donato Tony</b></a></li>
+<li><a href="https://github.com/evzs"><b>Chibane Eva</b></a></li>
+<li><a href="https://github.com/KhaledTarraf"><b>Kojok Tarraf Malcom</b></a> </li>
+</ul>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
